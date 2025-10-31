@@ -28,7 +28,7 @@ const routes = {
                 </div>
                 <div class="hr mb-4"></div>
                 <div class="card">
-                <h3 class="cool_hover_1">games i like...</h3><div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">DELTARUNE</span> <span class="chip cool_hover_1">Minecraft</span> <span class="chip cool_hover_1">KSP</span> <span class="chip cool_hover_1">Cities: Skylines</span> <span class="chip cool_hover_1">DCS</span> <span class="chip cool_hover_1">robloc RIVALS</span></div>
+                <h3 class="cool_hover_1">games i like...</h3><div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">DELTARUNE</span> <span class="chip cool_hover_1">UNDERTALE</span> <span class="chip cool_hover_1">Minecraft</span> <span class="chip cool_hover_1">KSP</span> <span class="chip cool_hover_1">Cities: Skylines</span> <span class="chip cool_hover_1">DCS</span> <span class="chip cool_hover_1">robloc RIVALS</span></div>
                 </div>
                 <div class="hr mb-4"></div>
             </div>
