@@ -76,9 +76,9 @@ const playlist_bg = [
     [ false, "encounter" ],
     [ false, "deltarune"],
     [ false, "deltarune"],
-    [ true, "ost20 lyrical no vocals ch3 lightners live.mp4" ],
+    [ true, "ost20_lyrical_no_vocals_ch3_lightners_live.mp4" ],
     [ false, "deltarune"],
-    [ true, "東方Bad Apple!! ＰＶ影絵.mp4"]
+    [ true, "bad_apple.mp4"]
 ];
 
 
