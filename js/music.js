@@ -199,7 +199,7 @@ function create_player(videoId) {
                         });
                         document.getElementsByTagName("body")[0].classList.add("bg_:empty");
                         vbg.classList.remove("vbg-hide");
-                        bgvid.src = `/assets/${playlist_bg[index][1]}`;
+                        bgvid.src = `assets/${playlist_bg[index][1]}`;
                         bgvid.load();
                         bgvid.play();
                     } else {
