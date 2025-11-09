@@ -141,7 +141,7 @@ document.addEventListener("keyup", interact);
 let dragging = false;
 let offsetX, offsetY;
 
-document.getElementById("mplayer").addEventListener("mousedown", e => {
+document.getElementById("mplayer").addEventListener("pointerdown", e => {
     dragging = true;
     let rect = document.getElementById("mplayer").getBoundingClientRect();
     offsetX = window.innerWidth - e.clientX - (window.innerWidth - rect.right);
@@ -150,7 +150,7 @@ document.getElementById("mplayer").addEventListener("mousedown", e => {
     document.getElementById("mplayer").style.cursor = "grabbing";
 });
 
-document.addEventListener("mousemove", e => {
+document.addEventListener("pointermove", e => {
     if (!dragging) return;
     let right = window.innerWidth - e.clientX - offsetX;
     let bottom = window.innerHeight - e.clientY - offsetY;
@@ -159,7 +159,7 @@ document.addEventListener("mousemove", e => {
     document.getElementById("mplayer").style.bottom = bottom + "px";
 });
 
-document.addEventListener("mouseup", () => {
+document.addEventListener("pointerup", () => {
     dragging = false;
     document.getElementById("mplayer").style.cursor = "grab";
 });
