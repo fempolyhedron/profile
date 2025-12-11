@@ -82,7 +82,7 @@ const playlist_bg = [
 ];
 
 
-let index = Math.floor(Math.random() * (3 - 0 + 1)) + 0;
+let index = Math.floor(Math.random() * (3));
 let ytplayer = null;
 let progbar = null;
 
