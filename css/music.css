@@ -38,7 +38,7 @@
     cursor: grab;
     user-select: none;
     width: 350px;
-    height: 150px;
+    height: 210px;
     justify-content: center;
 
     border-radius: var(--radius-2xl);

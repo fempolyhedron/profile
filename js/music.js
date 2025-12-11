@@ -16,6 +16,7 @@ const playlist = [
     "bBHNnzPJLZA",
     "RKQUblO-iCs",
     "Zm_-c8DwLes",
+    "7f1RK1m7qvc",
     "XxAzbt1eS5M",
     "N117e1Ub39A",
     "QZ03-aaO4sA",
@@ -29,6 +30,7 @@ const playlist_titles = [
     "Never Forget",
     "My Castle Town",
     "Until Next Time",
+    "The Third Sancturary",
     "Rude Buster",
     "Ruder Buster",
     "Neverending Night",
@@ -38,10 +40,25 @@ const playlist_titles = [
     "Bad Apple!! feat. nomico"
 ];
 
+const playlist_authors = [
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "Toby \"Radiation\" Fox",
+    "i litreally have no clue",
+];
+
 const playlist_from = [
     "DELTARUNE - Ch1",
     "DELTARUNE - Ch2",
     "DELTARUNE - Ch2",
+    "DELTARUNE - Ch3/4", //
     "DELTARUNE - Ch1",
     "DELTARUNE - Ch3/4",
     "DELTARUNE - Ch3/4",
@@ -51,14 +68,11 @@ const playlist_from = [
     "Touhou Project - Touhou 4"
 ];
 
-const playlist_authors = [
-    //lazy - dont want to implement
-];
-
 const playlist_ident = [
     "OST39",
     "OST3",
     "OST45",
+    "OST63",
     "OST10",
     "OST11",
     "OST72",
@@ -72,6 +86,7 @@ const playlist_bg = [
     [ false, "deltarune"],
     [ false, "deltarune"],
     [ false, "deltarune"],
+    [ false, "deltarune"],
     [ false, "encounter" ],
     [ false, "encounter" ],
     [ false, "deltarune"],
@@ -81,6 +96,19 @@ const playlist_bg = [
     [ true, "bad_apple.mp4"]
 ];
 
+const playlist_m_details = [
+    "4/4 | D major",
+    "3/4 | F major",
+    "4/4 | C# minor",
+    "9/4 → 11/8 | D#m aeolian",
+    "4/4 | G dorian",
+    "4/4 | G dorian",
+    "3/4 | C# minor",
+    "4/4 | E major",
+    "4/4 | D# minor",
+    "4/4 | F# major",
+    "4/4 | A minor"
+];
 
 let index = Math.floor(Math.random() * (3));
 let ytplayer = null;
@@ -249,6 +277,8 @@ function create_player(videoId) {
     
     document.getElementById("mplayer-title").innerHTML = `${playlist_titles[index]}`;
     document.getElementById("mplayer-from").innerHTML = playlist_ident[index] == "NIL" ? playlist_from[index] : `<span style="color: cyan;">${playlist_ident[index]}</span>  •  ${playlist_from[index]}`;
+    document.getElementById("mplayer-detail-m").innerHTML = playlist_m_details[index] ? playlist_m_details[index] : document.getElementById("mplayer-detail-m").innerHTML
+    document.getElementById("mplayer-artist").innerHTML = playlist_authors[index] ? playlist_authors[index] : document.getElementById("mplayer-artist").innerHTML 
 }
 
 function _vol(player, target, duration) {

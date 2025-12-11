@@ -19,7 +19,7 @@ const routes = {
                 <div class="hr mb-4"></div>
                 <p class="lead">my hobbies are coding, playing DELTARUNE, playing the guitar, playing the piano, and music production</p>
                 <div class="hr mb-4"></div>
-                <p class="lead">specs<br>NVIDIA GeForce RTX 3060<br>AMD Ryzen 7 6800H with Radeon Graphics<br>48GB RAM<br>Transcend MTE115S 1TB NVMe SSD<br>Samsung PM991a 1TB M.2 NVMe SSD<br><br>gear:<br>Yamaha MX61 Synth<br>Yamaha MG06 6-Channel Analog Mixer</p>
+                <p class="lead">specs<br>NVIDIA GeForce RTX 3060<br>AMD Ryzen 7 6800H with Radeon Graphics<br>48GB RAM<br>Transcend MTE115S 1TB NVMe SSD<br>Samsung PM991a 1TB M.2 NVMe SSD<br><br>gear<br>Yamaha MX61 Synth<br>Yamaha MG06 6-Channel Analog Mixer<br><br>software<br>FL Studio (Music)<br>VSCode (java, c/c++, and web ide)<br>Visual Studio (.net ide)<br>DaVinci Resolve (editing)<br>Blender (animation)<br>Chrome (web browser because fuck "opera gx")</p>
             </div>
             <div class="col-4">
                 <div class="card">
