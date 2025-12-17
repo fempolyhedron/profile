@@ -100,7 +100,7 @@ const playlist_m_details = [
     "4/4 | D major",
     "3/4 | F major",
     "4/4 | C# minor",
-    "9/4 → 11/8 | D#m aeolian",
+    "9/4, 11/8 | D#m aeolian",
     "4/4 | G dorian",
     "4/4 | G dorian",
     "3/4 | C# minor",
@@ -108,7 +108,7 @@ const playlist_m_details = [
     "4/4 | D# minor",
     "4/4 | F# major",
     "4/4 | A minor"
-];
+];  
 
 let index = Math.floor(Math.random() * (3));
 let ytplayer = null;
