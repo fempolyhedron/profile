@@ -24,7 +24,7 @@ const routes = {
             <div class="col-4">
                 <div class="card">
                 <h3 class="cool_hover_1">i can code in...</h3>
-                    <div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">C#</span> <span class="chip cool_hover_1">JS (Full Stack)</span> <span class="chip cool_hover_1">Java</span> <span class="chip cool_hover_1">Luau</span> <span class="chip cool_hover_1">C/C++</span> <span class="chip cool_hover_1">VB.NET</span> <span class="chip cool_hover_1">Assembly</span> <span class="chip cool_hover_1">Python</span> <span class="chip cool_hover_1">Minecraft Datapacks</span></div>
+                    <div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">C#</span> <span class="chip cool_hover_1">JS (Full Stack)</span> <span class="chip cool_hover_1">Java</span> <span class="chip cool_hover_1">Luau</span> <span class="chip cool_hover_1">C/C++ (GNU, not MSVC)</span> <span class="chip cool_hover_1">GML (Gamemaker Lang)</span> <span class="chip cool_hover_1">VB.NET (Excel)</span> <span class="chip cool_hover_1">NASM Assembly (x86)</span> <span class="chip cool_hover_1">Python</span> <span class="chip cool_hover_1">Minecraft Datapacks/Commands</span> <span class="chip cool_hover_1">Shell/Bash</span></div>
                 </div>
                 <div class="hr mb-4"></div>
                 <div class="card">
