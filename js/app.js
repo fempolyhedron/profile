@@ -37,13 +37,28 @@ const routes = {
     proj: () => `
         <div class="mb-4">
             <h2 class="cool_hover_1">Projects</h2>
-            <p class="text-muted">list of solo public coding projects</p>
+            <p class="text-muted">list of projects im involved as of now</p>
         </div>
         <div class="row">
             <div class="col-6">
                 <div class="card">
-                    <h3 class="cool_hover_1">no <i>public</i> projects... yet</h3>
+                    <h3 class="cool_hover_1">parabellum</h3>
+                    scripter/composer/gui desginer<br><br>
+                    a roblox extraction shooter
                 </div>
+                <div class="hr mb-4"></div>
+                <div class="card">
+                    <h3 class="cool_hover_1">vertexigon</h3>
+                    repo owner<br><br>
+                    a side project. deltarune modding tool
+                </div>
+                <div class="hr mb-4"></div>
+                <div class="card">
+                    <h3 class="cool_hover_1">Undertale: Eschaton</h3>
+                    Developer<br><br>
+                    an undertale fangame
+                </div>
+                <di
             </div>
         </div>
     `,
