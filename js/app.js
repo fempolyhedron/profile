@@ -1,10 +1,10 @@
 const routes = {
     index: () => `
         <div class="hero">
-            <img src="assets/pfp/discord.png" alt="Profile Picture" width="200em" style="border-radius: 50%;"/>
+            <img src="assets/pfp/pfp.png" alt="kris deltarune" width="200em" height="200cm" style="border-radius: 50%; object-fit: cover;"/>
             <br>
             <div class="title cool_hover_1">hai :3</div>
-            <div class="subtitle">im a korean programmer, composer, producer, and editor<!--, and animator--></div>
+            <div class="subtitle">im a transfem korean programmer, composer, producer, ui desginer, speedrunner and editor, and animator</div>
             <div class="mt-4">
                 <a class="btn btn-primary" href="#proj">projects</a>
                 <a class="btn btn-primary" href="#disk">music</a>
@@ -15,11 +15,11 @@ const routes = {
         <div class="row">
             <div class="col-8">
                 <h2 class="cool_hover_1">About</h2>
-                <p class="lead">hi there! im a korean dev who also makes music and shit<br>i also edit videos for others<br><br>am a transfem leaning n/b</p>
+                <p class="lead">hi there! im a transfem korean dev who also makes music and shit<br>as i am a transfem leaning non-binary, my pronouns are she/her or they/them, i prefer she/her but you can use they/them<br>i am pansexual but you will see my say bi, because im bi-myself :3</p>
                 <div class="hr mb-4"></div>
-                <p class="lead">my hobbies are coding, playing games, playing the guitar, playing the piano, and music production</p>
+                <p class="lead">I can program, play the guitar, play the piano, and speedrun deltarune</p>
                 <div class="hr mb-4"></div>
-                <p class="lead">specs<br>NVIDIA GeForce RTX 3060<br>AMD Ryzen 7 6800H with Radeon Graphics<br>48GB RAM<br>Transcend MTE115S 1TB NVMe SSD<br>Samsung PM991a 1TB M.2 NVMe SSD<br><br>gear<br>Yamaha MX61 Synth<br>Yamaha MG06 6-Channel Analog Mixer<br><br>software<br>FL Studio (Music)<br>VSCode (java, c/c++, and web ide)<br>Visual Studio (.net ide)<br>Unity (engine)<br>DaVinci Resolve (editing)<br>Blender (animation)<br>Chrome (web browser because fuck "opera gx")</p>
+                <p class="lead">specs<br>NVIDIA GeForce RTX 3060<br>AMD Ryzen 7 6800H with Radeon Graphics<br>16GB ECC DDR5 RAM<br>32GB ECC DDR5 RAM<br>Transcend MTE115S 1TB NVMe SSD<br>Samsung PM991a 1TB M.2 NVMe SSD<br><br>gear<br>Yamaha MX61 Synth<br>Yamaha MG06 6-Channel Analog Mixer<br><br>software<br>FL Studio (Music)<br>VSCode (java, c/c++, and web ide)<br>Visual Studio (.net ide)<br>Unity (engine)<br>DaVinci Resolve (editing)<br>Blender (animation)<br>Chrome (web browser because fuck "opera gx")</p>
             </div>
             <div class="col-4">
                 <div class="card">
@@ -28,7 +28,7 @@ const routes = {
                 </div>
                 <div class="hr mb-4"></div>
                 <div class="card">
-                <h3 class="cool_hover_1">games i like...</h3><div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">DELTARUNE</span> <span class="chip cool_hover_1">UNDERTALE</span> <span class="chip cool_hover_1">Minecraft</span> <span class="chip cool_hover_1">KSP</span> <span class="chip cool_hover_1">Cities: Skylines</span> <span class="chip cool_hover_1">DCS</span> <span class="chip cool_hover_1">robloc RIVALS</span></div>
+                <h3 class="cool_hover_1">games i like...</h3><div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">DELTARUNE</span> <span class="chip cool_hover_1">Geometry Dash</span> <span class="chip cool_hover_1">Subnautica</span> <span class="chip cool_hover_1">TF2</span> <span class="chip cool_hover_1">UNDERTALE</span> <span class="chip cool_hover_1">Minecraft</span> <span class="chip cool_hover_1">KSP</span> <span class="chip cool_hover_1">Cities: Skylines</span> <span class="chip cool_hover_1">DCS</span> </div>
                 </div>
                 <div class="hr mb-4"></div>
             </div>
@@ -42,23 +42,28 @@ const routes = {
         <div class="row">
             <div class="col-6">
                 <div class="card">
-                    <h3 class="cool_hover_1">parabellum</h3>
-                    scripter/composer/gui desginer<br><br>
+                    <h3 class="cool_hover_1">parabellum</h3><br>
+                    scripter, composer, gui desginer<br><br>
                     a roblox extraction shooter
                 </div>
                 <div class="hr mb-4"></div>
                 <div class="card">
-                    <h3 class="cool_hover_1">vertexigon</h3>
-                    repo owner<br><br>
+                    <h3 class="cool_hover_1">vertexigon</h3><br>
+                    creator<br><br>
                     a side project. deltarune modding tool
                 </div>
                 <div class="hr mb-4"></div>
                 <div class="card">
-                    <h3 class="cool_hover_1">Undertale: Eschaton</h3>
-                    Developer<br><br>
-                    an undertale fangame
+                    <h3 class="cool_hover_1">Pixilverse</h3><br>
+                    lead programmer, composer<br><br>
+                    an deltarune-inspired game for youtuber pixilworldians
                 </div>
-                <di
+                <div class="hr mb-4"></div>
+                <div class="card">
+                    <h3 class="cool_hover_1">Pixil Animated Show</h3><br>
+                    series creator, producer, writer, editor, composer<br><br>
+                    an animated show include characters from youtuber pixilworldians and her community<br>
+                </div>
             </div>
         </div>
     `,

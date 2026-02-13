@@ -1,6 +1,3 @@
-/// :: liquidglass musicplayer
-/// :: version 0.1
-///
 /// (c) 2025 polyhedron
 /// Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
 /// You may share and adapt this code for non-commercial purposes,
@@ -13,31 +10,29 @@ tag.src = "https://www.youtube.com/iframe_api";
 document.body.appendChild(tag);
 
 const playlist = [
-    "bBHNnzPJLZA",
-    "RKQUblO-iCs",
+    "RKQUblO-iCs", 
     "Zm_-c8DwLes",
     "7f1RK1m7qvc",
     "XxAzbt1eS5M",
     "N117e1Ub39A",
-    "QZ03-aaO4sA",
-    "ArtRuJiTYbI",
+    "OobVFldn6As",
     "85WD93lz5GU",
     "Jm3AM-sAbmA",
-    "FtutLA63Cp8"
+    "FtutLA63Cp8",
+    "UTcZHzDY3LU"
 ];
 
 const playlist_titles = [
-    "Never Forget",
     "My Castle Town",
     "Until Next Time",
     "The Third Sancturary",
     "Rude Buster",
     "Ruder Buster",
-    "Neverending Night",
-    "Lost Girl",
+    "From Now On (Battle 2)",
     "Raise Up Your Bat",
     "You Can Always Come Home",
-    "Bad Apple!! feat. nomico"
+    "Bad Apple!! feat. nomico",
+    "Affection Addiction<span style=\"font-size:0.5em\"> ft. </span>POPY"
 ];
 
 const playlist_authors = [
@@ -49,23 +44,22 @@ const playlist_authors = [
     "Toby \"Radiation\" Fox",
     "Toby \"Radiation\" Fox",
     "Toby \"Radiation\" Fox",
-    "Toby \"Radiation\" Fox",
-    "Toby \"Radiation\" Fox",
-    "i litreally have no clue",
+    "ZUN, Masayoshi Minoshima",
+    "KAT, Aku P"
 ];
 
 const playlist_from = [
-    "DELTARUNE - Ch1",
     "DELTARUNE - Ch2",
-    "DELTARUNE - Ch2",
-    "DELTARUNE - Ch3/4", //
-    "DELTARUNE - Ch1",
-    "DELTARUNE - Ch3/4",
-    "DELTARUNE - Ch3/4",
     "DELTARUNE - Ch2",
     "DELTARUNE - Ch3/4",
     "DELTARUNE - Ch1",
-    "Touhou Project - Touhou 4"
+    "DELTARUNE - Ch3/4",
+    "DELTARUNE - Ch3/4",
+    "DELTARUNE - Ch3/4",
+    "DELTARUNE - Ch2",
+    "DELTARUNE - Ch3/4",
+    "Touhou Project - Touhou 4",
+    "Affection Addiction"
 ];
 
 const playlist_ident = [
@@ -75,11 +69,10 @@ const playlist_ident = [
     "OST63",
     "OST10",
     "OST11",
-    "OST72",
     "OST30",
     "OST20",
-    "OST38",
-    "NIL"
+    "NIL",
+    "1"
 ];
 
 const playlist_bg = [
@@ -90,10 +83,9 @@ const playlist_bg = [
     [ false, "encounter" ],
     [ false, "encounter" ],
     [ false, "deltarune"],
-    [ false, "deltarune"],
     [ true, "ost20_lyrical_no_vocals_ch3_lightners_live.mp4" ],
-    [ false, "deltarune"],
-    [ true, "bad_apple.mp4"]
+    [ true, "bad_apple.mp4"],
+    [ true, "kat_x_aku_p_affection_addiction_ft_POPY.mp4" ]
 ];
 
 const playlist_m_details = [
@@ -103,14 +95,13 @@ const playlist_m_details = [
     "9/4, 11/8 | D#m aeolian",
     "4/4 | G dorian",
     "4/4 | G dorian",
-    "3/4 | C# minor",
     "4/4 | E major",
     "4/4 | D# minor",
-    "4/4 | F# major",
-    "4/4 | A minor"
-];  
+    "4/4 | A minor",    
+    "4/4 | G minor"
+];
 
-let index = Math.floor(Math.random() * (3));
+let index = Math.random() < 0.3 ? playlist.length - 1 : Math.floor(Math.random() * (playlist.length - 1));
 let ytplayer = null;
 let progbar = null;
 
@@ -229,7 +220,11 @@ function create_player(videoId) {
                         vbg.classList.remove("vbg-hide");
                         bgvid.src = `assets/${playlist_bg[index][1]}`;
                         bgvid.load();
-                        bgvid.play();
+                        setTimeout(() => {
+                            bgvid.play();
+                            bgvid.currentTime = ytplayer.getCurrentTime();
+                            bgvid.play().catch(()=>{});
+                        }, 1000);
                     } else {
                         const vbg = document.querySelector(".video-bg");
                         const bgvid = document.getElementById("bgvid");
@@ -385,3 +380,15 @@ function seek_to_click(event) {
     if (!dur || !isFinite(dur)) return;
     ytplayer.seekTo(dur * pct, true);
 }
+
+document.addEventListener("visibilitychange", () => {
+
+    if (!document.hidden && ytplayer) {
+        const bgvid = document.getElementById("bgvid");
+
+        if (bgvid) {
+            bgvid.currentTime = ytplayer.getCurrentTime();
+            bgvid.paused = ytplayer.paused;
+        }
+    }
+});
