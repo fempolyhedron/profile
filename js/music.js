@@ -78,7 +78,6 @@ const playlist_bg = [
     [ false, "deltarune"],
     [ false, "deltarune"],
     [ false, "deltarune"],
-    [ false, "deltarune"],
     [ false, "encounter" ],
     [ false, "encounter" ],
     [ false, "deltarune"],
