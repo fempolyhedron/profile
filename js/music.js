@@ -57,7 +57,6 @@ const playlist_from = [
     "DELTARUNE - Ch3/4",
     "DELTARUNE - Ch3/4",
     "DELTARUNE - Ch2",
-    "DELTARUNE - Ch3/4",
     "Touhou Project - Touhou 4",
     "Affection Addiction"
 ];
