@@ -80,8 +80,9 @@ const playlist_bg = [
     [ false, "deltarune"],
     [ false, "encounter" ],
     [ false, "encounter" ],
-    [ false, "deltarune"],
+    [ false, "encounter" ],
     [ true, "ost20_lyrical_no_vocals_ch3_lightners_live.mp4" ],
+    [ false, "deltarune"],
     [ true, "bad_apple.mp4"],
     [ true, "kat_x_aku_p_affection_addiction_ft_POPY.mp4" ]
 ];
