@@ -333,7 +333,6 @@ function _mute() {
     mute = ytplayer.isMuted();
 }
 
-// ---- Progress bar ----
 function _prog_reset() {
     const bar = document.getElementById("progress_bar");
     if (bar) bar.style.width = "0%";

@@ -4,7 +4,7 @@ const routes = {
             <img src="assets/pfp/pfp.png" alt="kris deltarune" width="200em" height="200cm" style="border-radius: 50%; object-fit: cover;"/>
             <br>
             <div class="title cool_hover_1">hai :3</div>
-            <div class="subtitle">im a transfem korean programmer, composer, producer, ui desginer, speedrunner and editor, and animator</div>
+            <div class="subtitle">im a transfem korean programmer, composer, producer, ui desginer, slowrunner and editor, and (beginner) animator</div>
             <div class="mt-4">
                 <a class="btn btn-primary" href="#proj">projects</a>
                 <a class="btn btn-primary" href="#disk">music</a>
@@ -15,7 +15,7 @@ const routes = {
         <div class="row">
             <div class="col-8">
                 <h2 class="cool_hover_1">About</h2>
-                <p class="lead">hi there! im a transfem korean dev who also makes music and shit<br>as i am a transfem leaning non-binary, my pronouns are she/her or they/them, i prefer she/her but you can use they/them<br>am pansexual, taken :3</p>
+                <p class="lead">hi there! im a transfem korean dev who also makes music and shit<br>as i am a transfem leaning non-binary, my pronouns are she/her or they/them, i prefer she/her but you can use they/them</p>
                 <div class="hr mb-4"></div>
                 <p class="lead">I can program, play the guitar, play the piano, and speedrun deltarune</p>
                 <div class="hr mb-4"></div>
@@ -54,15 +54,9 @@ const routes = {
                 </div>
                 <div class="hr mb-4"></div>
                 <div class="card">
-                    <h3 class="cool_hover_1">Pixilverse</h3><br>
-                    lead programmer, composer<br><br>
-                    an deltarune-inspired game for youtuber pixilworldians
-                </div>
-                <div class="hr mb-4"></div>
-                <div class="card">
-                    <h3 class="cool_hover_1">Pixil Animated Show</h3><br>
-                    series creator, producer, writer, editor, composer<br><br>
-                    an animated show include characters from youtuber pixilworldians and her community<br>
+                    <h3 class="cool_hover_1">fourtitude</h3><br>
+                    creator<br><br>
+                    ANOTHER sideproject. shitty ass UI framework
                 </div>
             </div>
         </div>
