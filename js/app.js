@@ -24,7 +24,7 @@ const routes = {
             <div class="col-4">
                 <div class="card">
                 <h3 class="cool_hover_1">i can code in...</h3>
-                    <div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">C#</span> <span class="chip cool_hover_1">JS (Full Stack)</span> <span class="chip cool_hover_1">Java</span> <span class="chip cool_hover_1">Luau</span> <span class="chip cool_hover_1">C/C++ (GNU, not MSVC)</span> <span class="chip cool_hover_1">GML (Gamemaker Lang)</span> <span class="chip cool_hover_1">VB.NET (Excel)</span> <span class="chip cool_hover_1">NASM Assembly (x86)</span> <span class="chip cool_hover_1">Python</span> <span class="chip cool_hover_1">Minecraft Datapacks/Commands</span> <span class="chip cool_hover_1">Shell/Bash</span></div>
+                    <div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"><span class="chip cool_hover_1">C#</span> <span class="chip cool_hover_1">JS (Full Stack)</span> <span class="chip cool_hover_1">Java</span> <span class="chip cool_hover_1">Luau</span> <span class="chip cool_hover_1">C/C++ (GNU, not MSVC)</span> <span class="chip cool_hover_1">GML (Gamemaker Lang)</span> <span class="chip cool_hover_1">VB.NET (Excel)</span> <span class="chip cool_hover_1">NASM Assembly (x86)</span> <span class="chip cool_hover_1">Minecraft Datapacks/Commands</span> <span class="chip cool_hover_1">Shell/Bash</span></div>
                 </div>
                 <div class="hr mb-4"></div>
                 <div class="card">
@@ -126,7 +126,8 @@ const routes = {
     `
 };
 
-function build_page(){
+function build_page()
+{
     const app=document.getElementById('app');
     const page=get_route();
     app.innerHTML=routes[page]();
@@ -135,25 +136,41 @@ function build_page(){
     wire_cool_hover_motion2(app);
 }
 
-function get_route(){
+function get_route()
+{
     const hash=(location.hash||'#index').replace('#','').trim();
     return routes[hash]?hash:'index';
 }
 
-function set_active_nav(route_key){
-    document.querySelectorAll('#nav a').forEach(a=>{
-        if(a.dataset.route===route_key)a.setAttribute('aria-current','page');
+function set_active_nav(route_key)
+{
+    document.querySelectorAll('#nav a').forEach(a =>
+    {
+        if(a.dataset.route === route_key) a.setAttribute('aria-current','page');
         else a.removeAttribute('aria-current');
     });
 }
 
-function wire_cool_hover_motion(root){
-    const els=root.querySelectorAll('.cool_hover_1');
-    els.forEach(el=>{
-        let rect=null;
-        function update_rect(){rect=el.getBoundingClientRect();}
-        function enter(){update_rect();el.style.setProperty('--scale','1.06');}
-        function move(e){
+function wire_cool_hover_motion(root)
+{
+    const els = root.querySelectorAll('.cool_hover_1');
+    els.forEach(el =>
+    {
+        let rect = null;
+
+        function update_rect()
+        {
+            rect = el.getBoundingClientRect();
+        }
+
+        function enter()
+        {
+            update_rect();
+            el.style.setProperty('--scale','1.06');
+        }
+
+        function move(e)
+        {
             if(!rect)update_rect();
             const cx=rect.left+rect.width/2, cy=rect.top+rect.height/2;
             const dx=(e.clientX-cx)/(rect.width/2), dy=(e.clientY-cy)/(rect.height/2);
@@ -161,9 +178,14 @@ function wire_cool_hover_motion(root){
             el.style.setProperty('--tx',`${tX.toFixed(2)}px`);
             el.style.setProperty('--ty',`${tY.toFixed(2)}px`);
         }
-        function leave(){
-            el.style.removeProperty('--tx');el.style.removeProperty('--ty');el.style.removeProperty('--scale');
+
+        function leave()
+        {
+            el.style.removeProperty('--tx');
+            el.style.removeProperty('--ty');
+            el.style.removeProperty('--scale');
         }
+
         el.addEventListener('mouseenter',enter);
         el.addEventListener('mousemove',move);
         el.addEventListener('mouseleave',leave);
@@ -173,22 +195,39 @@ function wire_cool_hover_motion(root){
 }
 
 function wire_cool_hover_motion2(root){
-    const els=root.querySelectorAll('.lead');
-    els.forEach(el=>{
-        let rect=null;
-        function update_rect(){rect=el.getBoundingClientRect();}
-        function enter(){update_rect();el.style.setProperty('--scale','1.01');}
-        function move(e){
-            if(!rect)update_rect();
-            const cx=rect.left+rect.width/2, cy=rect.top+rect.height/2;
-            const dx=(e.clientX-cx)/(rect.width/2), dy=(e.clientY-cy)/(rect.height/2);
-            const tX=Math.max(-1,Math.min(1,dx))*6, tY=Math.max(-1,Math.min(1,dy))*6;
+    const els = root.querySelectorAll('.lead');
+    els.forEach(el => 
+    {
+        let rect = null;
+
+        function update_rect()
+        {
+            rect=el.getBoundingClientRect();
+        }
+
+        function enter()
+        {
+            update_rect();
+            el.style.setProperty('--scale','1.01');
+        }
+
+        function move(e)
+        {
+            if(!rect) update_rect();
+            const cx = rect.left+rect.width/2, cy=rect.top+rect.height/2;
+            const dx = (e.clientX-cx)/(rect.width/2), dy=(e.clientY-cy)/(rect.height/2);
+            const tX = Math.max(-1,Math.min(1,dx))*6, tY=Math.max(-1,Math.min(1,dy))*6;
             el.style.setProperty('--tx',`${tX.toFixed(2)}px`);
             el.style.setProperty('--ty',`${tY.toFixed(2)}px`);
         }
-        function leave(){
-            el.style.removeProperty('--tx');el.style.removeProperty('--ty');el.style.removeProperty('--scale');
+
+        function leave()
+        {
+            el.style.removeProperty('--tx');
+            el.style.removeProperty('--ty');
+            el.style.removeProperty('--scale');
         }
+
         el.addEventListener('mouseenter',enter);
         el.addEventListener('mousemove',move);
         el.addEventListener('mouseleave',leave);
@@ -197,20 +236,24 @@ function wire_cool_hover_motion2(root){
     });
 }
 
-function init_year(){
-    const y=document.getElementById('year');
-    if(y)y.textContent=new Date().getFullYear();
+function init_year()
+{
+    const y = document.getElementById('year');
+    if(y) y.textContent=new Date().getFullYear();
 }
 
 window.addEventListener('hashchange',build_page);
 window.addEventListener('DOMContentLoaded',()=>{init_year();build_page();});
 
-async function title() {
+async function title()
+{
     const tip = ":3 silly femboy ".split("");
     let i = 0
     let back = false;
-    while(true) {
-        if(i < tip.length) {
+    while(true)
+    {
+        if(i < tip.length)
+        {
             const looped = tip.concat(tip.slice(0, tip.length));
             document.title = looped.slice(i, i + tip.length).join("");
         }
@@ -223,30 +266,37 @@ title()
 
 //easter egg
 
-function interactStop(event) {
-    if (event.code === "KeyZ" || event.code === "Enter") {
+function interactStop(event) 
+{
+    if (event.code === "KeyZ" || event.code === "Enter")
+    {
         //positive
     }
-    if (event.code === "KeyX" || event.code === "Shift") {
+    if (event.code === "KeyX" || event.code === "Shift")
+    {
         //negative
     } 
-    if (event.code === "KeyC" || event.code === "CtrlLeft") {
+    if (event.code === "KeyC" || event.code === "CtrlLeft")
+    {
         //neutral
     }
 }
 
-function interactStart(event) {
-    if (event.code === "KeyZ" || event.code === "Enter") {
+function interactStart(event) 
+{
+    if (event.code === "KeyZ" || event.code === "Enter") 
+    {
         //positive
     }
-    if (event.code === "KeyX" || event.code === "Shift") {
+    if (event.code === "KeyX" || event.code === "Shift") 
+    {
         //negative
     } 
-    if (event.code === "KeyC" || event.code === "CtrlLeft") {
+    if (event.code === "KeyC" || event.code === "CtrlLeft")
+    {
         //neutral
     }
 }
 
 document.addEventListener("keydown", interactStart);
 document.addEventListener("keyup", interactStop);
-
