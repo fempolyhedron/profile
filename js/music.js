@@ -1,9 +1,4 @@
-/// (c) 2025 polyhedron
-/// Licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
-/// You may share and adapt this code for non-commercial purposes,
-/// provided that attribution is given and derivatives are licensed under identical terms.
-///
-/// License: https://creativecommons.org/licenses/by-nc-sa/4.0/
+//shitty ass music player ig /shrug/
 
 const tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
@@ -19,7 +14,8 @@ const playlist = [
     "85WD93lz5GU",
     "Jm3AM-sAbmA",
     "FtutLA63Cp8",
-    "UTcZHzDY3LU"
+    "UTcZHzDY3LU",
+    "FftLImzl1-k"
 ];
 
 const playlist_titles = [
@@ -32,7 +28,8 @@ const playlist_titles = [
     "Raise Up Your Bat",
     "You Can Always Come Home",
     "Bad Apple!! feat. nomico",
-    "Affection Addiction<span style=\"font-size:0.5em\"> ft. </span>POPY"
+    "Affection Addiction<span style=\"font-size:0.5em\"> ft. </span>POPY",
+    "I Wish That I Could Fall <span style=\"font-size:0.5em\"> ft. </span> GUMI SV"
 ];
 
 const playlist_authors = [
@@ -45,7 +42,8 @@ const playlist_authors = [
     "Toby \"Radiation\" Fox",
     "Toby \"Radiation\" Fox",
     "ZUN, Masayoshi Minoshima",
-    "KAT, Aku P"
+    "KAT, Aku P",
+    "JamieP"
 ];
 
 const playlist_from = [
@@ -58,7 +56,8 @@ const playlist_from = [
     "DELTARUNE - Ch3/4",
     "DELTARUNE - Ch2",
     "Touhou Project - Touhou 4",
-    "Affection Addiction"
+    "Affection Addiction",
+    "I Wish That I Could Fall"
 ];
 
 const playlist_ident = [
@@ -70,7 +69,8 @@ const playlist_ident = [
     "OST11",
     "OST30",
     "OST20",
-    "NIL",
+    "1",
+    "1",
     "1"
 ];
 
@@ -84,20 +84,22 @@ const playlist_bg = [
     [ true, "ost20_lyrical_no_vocals_ch3_lightners_live.mp4" ],
     [ false, "deltarune"],
     [ true, "bad_apple.mp4"],
-    [ true, "kat_x_aku_p_affection_addiction_ft_POPY.mp4" ]
+    [ true, "kat_x_aku_p_affection_addiction_ft_POPY.mp4" ],
+    [ true, "i_wish_that_i_could_fall_JamieP.mp4" ]
 ];
 
 const playlist_m_details = [
-    "4/4 | D major",
-    "3/4 | F major",
-    "4/4 | C# minor",
-    "9/4, 11/8 | D#m aeolian",
-    "4/4 | G dorian",
-    "4/4 | G dorian",
-    "4/4 | E major",
-    "4/4 | D# minor",
-    "4/4 | A minor",
-    "4/4 | G minor"
+    "4/4 | Dmaj ionian",
+    "3/4 | Fmaj ionian",
+    "4/4 | C#min",
+    "9/4, 11/8 | D#min aeolian",
+    "4/4 | Gmin dorian",
+    "4/4 | Gmin dorian",
+    "4/4 | Emaj ionian",
+    "4/4 | D#min",
+    "4/4 | Amin ionian",
+    "4/4 | Gmin ionian",
+    "4/4 | Emaj ionian"
 ];
 
 let index = Math.random() < 0.3 ? playlist.length - 1 : Math.floor(Math.random() * (playlist.length - 1));
@@ -236,12 +238,11 @@ function create_player(videoId)
                         vbg.classList.remove("vbg-hide");
                         bgvid.src = `assets/${playlist_bg[index][1]}`;
                         bgvid.load();
-                        setTimeout(() =>
+                        bgvid.addEventListener("canplay", () =>
                         {
-                            bgvid.play();
                             bgvid.currentTime = ytplayer.getCurrentTime();
                             bgvid.play().catch(() => {});
-                        }, 1000);
+                        })
                     }
                     else
                     {
