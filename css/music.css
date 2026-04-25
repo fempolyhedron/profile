@@ -101,10 +101,14 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: show;
-    max-width: 220px;
 }
 
 #mute {
     position: absolute;
     right: 15px;
+}
+
+#repeat {
+    position: absolute;
+    left: 15px;
 }

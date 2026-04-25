@@ -28,8 +28,8 @@ const playlist_titles = [
     "Raise Up Your Bat",
     "You Can Always Come Home",
     "Bad Apple!! feat. nomico",
-    "Affection Addiction<span style=\"font-size:0.5em\"> ft. </span>POPY",
-    "I Wish That I Could Fall <span style=\"font-size:0.5em\"> ft. </span> GUMI SV"
+    "Affection Addiction<span style=\"font-size:0.7em\"> feat. </span>POPY",
+    "I Wish That I Could Fall <span style=\"font-size:0.7em\"> feat. </span> GUMI SV"
 ];
 
 const playlist_authors = [
@@ -102,13 +102,14 @@ const playlist_m_details = [
     "4/4 | Emaj ionian"
 ];
 
-let index = Math.random() < 0.3 ? playlist.length - 1 : Math.floor(Math.random() * (playlist.length - 1));
+let index = Math.random() < 0.6 ? playlist.length - 1 : Math.floor(Math.random() * (playlist.length - 1));
 let ytplayer = null;
 let progbar = null;
 
 let mute = false;
 const t_vol = 60;
 const quant = 50;
+let repeat = false;
 
 function next_song()
 {
@@ -270,10 +271,13 @@ function create_player(videoId)
                             e.target.unMute();
                             _vol(e.target, t_vol, quant);
                         } catch (_) {}
+                        console.log("not muted");
                     }
                     else
                     {
                         e.target.setVolume(0);
+                        e.target.mute();
+                        console.log("muted");
                     }
 
                     _prog_reset();
@@ -289,7 +293,7 @@ function create_player(videoId)
                     {
                         _prog_end();
                         clearInterval(progbar);
-                        index = (index + 1) % playlist.length;
+                        index = repeat ? index : (index + 1) % playlist.length;
                         create_player(playlist[index]);
                     }
                 }
@@ -370,7 +374,13 @@ function _mute()
     if (!ytplayer) return;
     document.getElementById("mute").innerHTML = ytplayer.isMuted() ? `<i class="fa-solid fa-volume-high"></i>` : `<i class="fa-solid fa-volume-xmark"></i>`;
     ytplayer.isMuted() ? ytplayer.unMute() : ytplayer.mute();
-    mute = ytplayer.isMuted();
+    mute = !ytplayer.isMuted();
+}
+
+function _repeat()
+{
+    repeat = !repeat;
+    document.getElementById("repeat").innerHTML = repeat ? `<i class="fa-solid fa-repeat"></i>` : `<span style="position:relative;display:inline-block;"><i class="fa-solid fa-repeat"></i><i class="fa-solid fa-slash" style="position:absolute;left:0;top:0;"></i></span>`;
 }
 
 function _prog_reset()
