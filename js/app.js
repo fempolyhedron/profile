@@ -1,7 +1,8 @@
 const routes = {
     index: () => `
+        <style>#pfp:hover { --scale: 1.1 !important; } .sticker:hover { --scale: 1.15 !important; }</style>
         <div class="hero">
-            <img src="assets/pfp/pfp.png" alt="kris deltarune" width="200em" height="200cm" style="border-radius: 50%; object-fit: cover;"/>
+            <img id="pfp" src="assets/pfp/pfp.png" alt="kris deltarune" width="200em" height="200cm" class="cool_hover_1" style="border-radius: 50%; object-fit: cover;"/>
             <br>
             <div class="title cool_hover_1">hai :3</div>
             <div class="subtitle cool_hover_1">im a transfem korean programmer, composer, producer, ui desginer, slowrunner and editor, and (beginner) animator</div>
@@ -68,6 +69,7 @@ const routes = {
                 <div class="card cool_hover_1" style="height: 70px;"><h3>software</h3></div><p class="lead cool_hover_1">
                 <br>FL Studio (Music)<br>VSCode (java, c/c++, and web ide)<br>Visual Studio (.net ide)<br>Unity (engine)<br>DaVinci Resolve (editing)<br>Blender (animation)<br>Chrome (web browser because fuck "opera gx")</p>
             </div>
+            
             <div class="col-4">
                 <div class="card"><div class="card cool_hover_1" style="height: 70px;"><h3>i can code in...</h3></div><br>
                     <p class="muted">(sorted by fluency)</p>
@@ -84,11 +86,14 @@ const routes = {
                         <span class="chip cool_hover_1">NASM Assembly (x86) (only abit)</span>
                     </div>
                 </div>
-                <div class="hr mb-4"></div>
+                <br><div class="hr mb-4"></div>
                 <div class="card"><div class="card cool_hover_1" style="height: 70px;"><h3>games i like...</h3></div><br>
                     <div class="mb-2" style="display:flex; flex-wrap:wrap; gap:10px;"> <span class="chip cool_hover_1">KSP</span> <span class="chip cool_hover_1">Minecraft</span> <span class="chip cool_hover_1">DELTARUNE</span> <span class="chip cool_hover_1">Geometry Dash</span> <span class="chip cool_hover_1">Subnautica</span> <span class="chip cool_hover_1">TF2</span> <span class="chip cool_hover_1">UNDERTALE</span> <span class="chip cool_hover_1">Cities: Skylines</span> <span class="chip cool_hover_1">DCS</span> </div>
                 </div>
-                <div class="hr mb-4"></div>
+                <br><div class="hr mb-4"></div>
+                <img class="cool_hover_1 sticker" src="https://mystickermania.com/cdn/stickers/undertale/sticker_2120-512x512.png" width="300px" style="--rot: -30deg;">
+                <img class="cool_hover_1 sticker" src="https://i.redd.it/a1onam12r5h91.png" width="350px" style="--rot: 20deg;">
+                <d
             </div>
         </div>
     `,

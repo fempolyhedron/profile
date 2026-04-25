@@ -152,7 +152,7 @@ body::-webkit-scrollbar {
 .cool_hover_1
 {
     will-change:transform;
-    transform: translate(var(--tx,0px), var(--ty,0px)) scale(var(--scale,1));
+    transform: translate(var(--tx,0px), var(--ty,0px)) scale(var(--scale,1)) rotateZ(var(--rot,0deg));
     transition: transform .18s cubic-bezier(.2,.65,.2,1);
     cursor:default;
 }
