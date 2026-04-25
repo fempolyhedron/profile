@@ -42,13 +42,13 @@
     justify-content: center;
 
     border-radius: var(--radius-2xl);
-    background: radial-gradient(circle at center, rgba(0,0,0,0.5) 90%, rgba(255, 170, 0, 0.3) 100%);
+    background: radial-gradient(circle at center, rgba(0,0,0,0.3) 50%, rgba(0, 0, 0, 0) 90%);
     border: 1px solid var(--glass-brd);
     box-shadow: var(--shadow-xl);
     overflow: hidden;
     isolation: isolate;
-    backdrop-filter: blur(10px) saturate(70%);
-    -webkit-backdrop-filter: blur(10px) saturate(70%);
+    backdrop-filter: blur(5px) saturate(70%);
+    -webkit-backdrop-filter: blur(5px) saturate(70%);
 }
 
 #mplayer-btns {
