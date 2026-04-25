@@ -102,7 +102,7 @@ const playlist_m_details = [
     "4/4 | Emaj ionian"
 ];
 
-let index = Math.random() < 0.6 ? playlist.length - 1 : Math.floor(Math.random() * (playlist.length - 1));
+let index = playlist.length - 1;
 let ytplayer = null;
 let progbar = null;
 
