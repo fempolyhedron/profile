@@ -56,6 +56,12 @@
     gap: 8px;
 }
 
+#mplayer-link
+{
+    all: unset;
+    cursor: pointer;
+    color: rgb(255, 181, 255);
+
 #mplayer-btns button {
     background: rgba(0, 0, 0, 0.5);
     color: white;
@@ -101,6 +107,7 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: show;
+    margin-block-end: 1em;
 }
 
 #mute {

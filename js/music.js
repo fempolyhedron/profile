@@ -112,7 +112,7 @@ const playlist_m_details = [
     "4/4 | Amin ionian",
     "4/4 | Gmin ionian",
     "12/8 | Emaj ionian",
-    "uhh uhm... ill figure it out<br>after i arrange",
+    "uhm ill figure it out after i arrange",
     "4/4 | Emaj ionian"
 ];
 
@@ -315,8 +315,8 @@ function create_player(videoId)
         });
     }, 100);
 
-    document.getElementById("mplayer-title").innerHTML = `${playlist_titles[index]}`;
-    document.getElementById("mplayer-from").innerHTML = playlist_ident[index] == "NIL" ? playlist_from[index] : `<span style="color: cyan;">${playlist_ident[index]}</span>  •  ${playlist_from[index]}`;
+    document.getElementById("mplayer-title").innerHTML = `<a href="https://youtu.be/${playlist[index]}" id="mplayer-link" target="_blank">${playlist_titles[index]}</a>`;
+    document.getElementById("mplayer-from").innerHTML = `<span style="color: cyan;">${playlist_ident[index]}</span>  •  ${playlist_from[index]}`;
     document.getElementById("mplayer-detail-m").innerHTML = playlist_m_details[index] ? playlist_m_details[index] : document.getElementById("mplayer-detail-m").innerHTML
     document.getElementById("mplayer-artist").innerHTML = playlist_authors[index] ? playlist_authors[index] : document.getElementById("mplayer-artist").innerHTML
 }
