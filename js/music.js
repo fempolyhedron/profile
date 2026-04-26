@@ -460,7 +460,6 @@ document.addEventListener("visibilitychange", () =>
         {
             bgvid.currentTime = ytplayer.getCurrentTime();
             bgvid.paused = ytplayer.paused;
-            console.log("reset");
         }
     }
 });
