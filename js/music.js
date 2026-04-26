@@ -15,6 +15,8 @@ const playlist = [
     "Jm3AM-sAbmA",
     "FtutLA63Cp8",
     "UTcZHzDY3LU",
+    "NA3MJmcyPpE",
+    "WO12CVtRIJU",
     "FftLImzl1-k"
 ];
 
@@ -28,8 +30,10 @@ const playlist_titles = [
     "Raise Up Your Bat",
     "You Can Always Come Home",
     "Bad Apple!! feat. nomico",
-    "Affection Addiction<span style=\"font-size:0.7em\"> feat. </span>POPY",
-    "I Wish That I Could Fall <span style=\"font-size:0.7em\"> feat. </span> GUMI SV"
+    "Affection Addiction <span style=\"font-size:0.7em\"> ft. </span>POPY",
+    "Water The Roses <span style=\"font-size:0.7em\"> ft. </span> GUMI",
+    "Aero Era / Aluuna (<span style=\"font-size:0.7em\">feat. </span> GUMI)",
+    "I Wish That I Could Fall (<span style=\"font-size:0.7em\">feat. </span> GUMI SV)"
 ];
 
 const playlist_authors = [
@@ -43,6 +47,8 @@ const playlist_authors = [
     "Toby \"Radiation\" Fox",
     "ZUN, Masayoshi Minoshima",
     "KAT, Aku P",
+    "FLAVOR FOLEY",
+    "Aluuna",
     "JamieP"
 ];
 
@@ -57,6 +63,8 @@ const playlist_from = [
     "DELTARUNE - Ch2",
     "Touhou Project - Touhou 4",
     "Affection Addiction",
+    "Water The Roses",
+    "Aero Era",
     "I Wish That I Could Fall"
 ];
 
@@ -69,6 +77,8 @@ const playlist_ident = [
     "OST11",
     "OST30",
     "OST20",
+    "1",
+    "1",
     "1",
     "1",
     "1"
@@ -85,6 +95,8 @@ const playlist_bg = [
     [ false, "deltarune"],
     [ true, "bad_apple.mp4"],
     [ true, "kat_x_aku_p_affection_addiction_ft_POPY.mp4" ],
+    [ true, "water_the_roses_ft_GUMI_flavor_foley.mp4"],
+    [ true, "aero_era_aluuna_feat_GUMI_SV.mp4" ],
     [ true, "i_wish_that_i_could_fall_JamieP.mp4" ]
 ];
 
@@ -99,6 +111,8 @@ const playlist_m_details = [
     "4/4 | D#min",
     "4/4 | Amin ionian",
     "4/4 | Gmin ionian",
+    "12/8 | Emaj ionian",
+    "uhh uhm... ill figure it out<br>after i arrange",
     "4/4 | Emaj ionian"
 ];
 
