@@ -257,7 +257,7 @@ function create_player(videoId)
                         {
                             bgvid.currentTime = ytplayer.getCurrentTime();
                             bgvid.play().catch(() => {});
-                        })
+                        }, { once: true })
                     }
                     else
                     {
@@ -460,6 +460,7 @@ document.addEventListener("visibilitychange", () =>
         {
             bgvid.currentTime = ytplayer.getCurrentTime();
             bgvid.paused = ytplayer.paused;
+            console.log("reset");
         }
     }
 });
