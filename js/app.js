@@ -93,7 +93,6 @@ const routes = {
                 <br><div class="hr mb-4"></div>
                 <img class="cool_hover_1 sticker" src="https://mystickermania.com/cdn/stickers/undertale/sticker_2120-512x512.png" width="300px" style="--rot: -30deg;">
                 <img class="cool_hover_1 sticker" src="https://i.redd.it/a1onam12r5h91.png" width="350px" style="--rot: 20deg;">
-                <d
             </div>
         </div>
     `,
