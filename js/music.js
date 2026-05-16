@@ -17,7 +17,8 @@ const playlist = [
     "UTcZHzDY3LU",
     "NA3MJmcyPpE",
     "WO12CVtRIJU",
-    "FftLImzl1-k"
+    "FftLImzl1-k",
+    "ghEpW5vgCJc"
 ];
 
 const playlist_titles = [
@@ -33,7 +34,8 @@ const playlist_titles = [
     "Affection Addiction <span style=\"font-size:0.7em\"> ft. </span>POPY",
     "Water The Roses <span style=\"font-size:0.7em\"> ft. </span> GUMI",
     "Aero Era / Aluuna (<span style=\"font-size:0.7em\">feat. </span> GUMI)",
-    "I Wish That I Could Fall (<span style=\"font-size:0.7em\">feat. </span> GUMI SV)"
+    "I Wish That I Could Fall (<span style=\"font-size:0.7em\">feat. </span> GUMI SV)",
+    "Cicada"
 ];
 
 const playlist_authors = [
@@ -49,7 +51,8 @@ const playlist_authors = [
     "KAT, Aku P",
     "FLAVOR FOLEY",
     "Aluuna",
-    "JamieP"
+    "JamieP",
+    "Good Kid",
 ];
 
 const playlist_from = [
@@ -65,7 +68,8 @@ const playlist_from = [
     "Affection Addiction",
     "Water The Roses",
     "Aero Era",
-    "I Wish That I Could Fall"
+    "I Wish That I Could Fall",
+    "Can We Hang Out Sometime?",
 ];
 
 const playlist_ident = [
@@ -81,7 +85,8 @@ const playlist_ident = [
     "1",
     "1",
     "1",
-    "1"
+    "1",
+    "4"
 ];
 
 const playlist_bg = [
@@ -97,23 +102,25 @@ const playlist_bg = [
     [ true, "kat_x_aku_p_affection_addiction_ft_POPY.mp4" ],
     [ true, "water_the_roses_ft_GUMI_flavor_foley.mp4"],
     [ true, "aero_era_aluuna_feat_GUMI_SV.mp4" ],
-    [ true, "i_wish_that_i_could_fall_JamieP.mp4" ]
+    [ true, "i_wish_that_i_could_fall_JamieP.mp4" ],
+    [ true, "cicada_good_kid.mp4"]
 ];
 
 const playlist_m_details = [
     "4/4 | Dmaj ionian",
     "3/4 | Fmaj ionian",
-    "4/4 | C#min",
+    "4/4 | C#min aeolian",
     "9/4, 11/8 | D#min aeolian",
     "4/4 | Gmin dorian",
     "4/4 | Gmin dorian",
     "4/4 | Emaj ionian",
-    "4/4 | D#min",
+    "4/4 | D#min aeolian",
     "4/4 | Amin ionian",
     "4/4 | Gmin ionian",
     "12/8 | Emaj ionian",
     "uhm ill figure it out after i arrange",
-    "4/4 | Emaj ionian"
+    "4/4 | Emaj ionian",
+    "4/4 | Cmin aeolian"
 ];
 
 let index = playlist.length - 1;
