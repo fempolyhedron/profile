@@ -4,7 +4,7 @@ const routes = {
         <div class="hero">
             <img id="pfp" src="assets/pfp/pfp.png" alt="kris deltarune" width="200em" height="200cm" class="cool_hover_1" style="border-radius: 50%; object-fit: cover;"/>
             <br>
-            <div class="title cool_hover_1 polymoji-replace pmfont-twemoji pmfont-pride-flags">hai! im fem poly <emoji i="flags:pride/trans"></emoji> <emoji i="flags:pride/aromantic_asexual"></emoji><emoji i="people:hand/v"></emoji></div>
+            <div class="title cool_hover_1 polymoji-replace pmfont-twemoji pmfont-pride-flags">hai! im fem poly <emoji i="flags:pride/trans"></emoji> <emoji i="flags:pride/pansexual"></emoji><emoji i="people:hand/v"></emoji></div>
             <div class="subtitle cool_hover_1">im a transfem  korean programmer, composer, producer, ui desginer, slowrunner and editor, and (beginner) animator</div>
             <div class="mt-4">
                 <a class="btn btn-primary cool_hover_2" href="#proj">projects</a>
