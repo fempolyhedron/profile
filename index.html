@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>poly!</title>
+    <link rel="stylesheet" href="/resources/css/index.css">
+    <link rel="stylesheet" href="/wedwtk/res/wedwtk.css">
+</head>
+
+<body>
+    <div class="banner">
+        <div class="banner_inner">
+            <h1 class="textanim-fonttype">hi im poly! </h1>
+            <p class="emojiln polymoji-replace pmfont-pride-flags">:trans: :pan: :lesbian:</p>
+        </div>
+    </div>
+
+    <h2 class="submain">im a korean <span class="__hl">programmer</span>, <span class="__hl">gamedev</span>, <span class="__hl">UI designer</span>, <span class="__hl">composer</span>, <span class="__hl">producer</span>, <span class="__hl">musician</span>, and <span class="__hl">the professional dumbass</span></h2>
+
+    <div class="sec">
+        <h3 class="textanim-cursor">ABOUT ME</h3>
+        <p>blah blah blah!</p>
+    </div>
+
+    <script src="/resources/js/textanims.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fempolyhedron/polymoji@HEAD/dist/polymoji.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fempolyhedron/polymoji@HEAD/dist/plugins/pride_flags.js"></script>
+    <script>polymoji.render()</script>
+    
+    <script src="/wedwtk/scripts/index.js"></script>
+    <script>
+        let win1 = new WebwtkWindow("window_test1", "window 1! :3", 500, 300, 100, 100); win1.setPresetStyle("default"); win1.attachTo(document.body); win1.initDefaultEvents();
+        let win2 = new WebwtkWindow("window_test2", "window 2! :3", 500, 300, 110, 110); win2.setPresetStyle("curved"); win2.attachTo(document.body); win2.initDefaultEvents();
+        win1.getWindowElement().insertAdjacentHTML("beforeend", "<p style=\"color: black; font-family: 'JetBrains Mono'\">rawr :3</p>");
+        win2.getWindowElement().insertAdjacentHTML("beforeend", "<p style=\"color: black; font-family: 'JetBrains Mono'\">rawr :3</p>");
+        win1.getWindowElement().style.backgroundColor = "#ddd";
+        win2.getWindowElement().style.backgroundColor = "#ddd";
+    </script>
+</body>
