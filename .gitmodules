@@ -1,0 +1,3 @@
+[submodule "wedwtk"]
+	path = wedwtk
+	url = https://github.com/fempolyhedron/wedwtk.git
